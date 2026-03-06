@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio UI/UX 2025</title>
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter', sans-serif;
+}
+
+/* ===== BODY ===== */
+
+body{
+background:linear-gradient(180deg,#ffffff,#f5f5f7);
+color:#1d1d1f;
+overflow-x:hidden;
+}
+
+/* ===== ⭐ DEGRADE SUR GROS TITRES ===== */
+
+h1, h2{
+background:linear-gradient(90deg,#1d1d1f,#ff2d8d);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+/* ===== HEADER PREMIUM ===== */
+
+header{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+padding:22px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+backdrop-filter:blur(14px);
+background:rgba(255,255,255,0.7);
+border-bottom:1px solid rgba(0,0,0,0.05);
+z-index:100;
+}
+
+header nav a{
+margin-left:32px;
+text-decoration:none;
+color:#6e6e73;
+font-size:15px;
+transition:.3s;
+}
+
+header nav a:hover{
+color:#ff2d8d;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+text-align:center;
+padding:220px 10% 120px;
+}
+
+.hero h1{
+font-size:72px;
+letter-spacing:-2px;
+}
+
+.hero p{
+font-size:24px;
+color:#6e6e73;
+margin-top:24px;
+}
+
+/* ===== BUTTON ===== */
+
+.btn{
+display:inline-block;
+margin-top:50px;
+padding:16px 40px;
+border-radius:40px;
+background:#1d1d1f;
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn:hover{
+background:#ff2d8d;
+transform:scale(1.05);
+}
+
+/* ===== SECTION ===== */
+
+section{
+padding:140px 10%;
+}
+
+/* ===== TITRES SECTION ===== */
+
+h2{
+text-align:center;
+font-size:44px;
+margin-bottom:70px;
+}
+
+/* ===== GRID PROJET ===== */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+}
+
+.card{
+background:white;
+border-radius:26px;
+padding:22px;
+box-shadow:0 10px 40px rgba(0,0,0,0.04);
+transition:.4s ease;
+opacity:0;
+transform:translateY(40px);
+}
+
+.card.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.02);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:18px;
+margin-bottom:16px;
+}
+
+.card h3{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.card p{
+color:#6e6e73;
+font-size:15px;
+}
+
+/* ===== CONTACT ===== */
+
+.contact-container{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.contact-container p{
+text-align:center;
+color:#6e6e73;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+text-align:center;
+padding:50px;
+border-top:1px solid rgba(0,0,0,0.05);
+color:#6e6e73;
+}
+
+/* ===== CURSOR PREMIUM ===== */
+
+#cursorTrail{
+position:fixed;
+width:18px;
+height:18px;
+border-radius:50%;
+background:#ff2d8d;
+pointer-events:none;
+transform:translate(-50%,-50%);
+opacity:.85;
+box-shadow:0 0 25px rgba(255,45,141,.6);
+z-index:9999;
+transition:
+left .12s cubic-bezier(.25,.8,.25,1),
+top .12s cubic-bezier(.25,.8,.25,1),
+transform .25s ease;
+}
+
+/* ===== RESPONSIVE MOBILE ===== */
+
+@media (max-width: 768px) {
+header{
+padding:15px 5%;
+}
+
+header nav{
+display:flex;
+gap:15px;
+}
+
+header nav a{
+margin-left:0;
+font-size:12px;
+}
+
+header div{
+font-size:14px;
+}
+
+.hero{
+padding:180px 5% 80px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+section{
+padding:80px 5%;
+}
+
+h2{
+font-size:28px;
+margin-bottom:40px;
+}
+
+.contact-container{
+flex-direction:column;
+gap:15px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div><strong>MON UNIVERS</strong></div>
+
+<nav>
+
+<a href="#about">A propos</a>
+<a href="#projects">Mes Projets</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>UI/UX Designer</h1>
+<p>Je crée des expériences digitales modernes et fluides</p>
+<a href="#projects" class="btn">Voir mes projets</a>
+</section>
+
+<section id="about">
+<h2>A propos</h2>
+
+<p style="max-width:700px;margin:auto;text-align:center;color:#6e6e73;line-height:1.7">
+Passionnée par le design d'interfaces et la création digitale, je conçois des expériences utilisateur modernes, simples et efficaces.
+</p>
+</section>
+
+<section id="projects">
+<h2>Mes Projets</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="assets/image/p1.jpeg">
+<h3>GreenCity</h3>
+<p>Ville ecologique </p>
+</div>
+
+<div class="card">
+<img src="assets/image/p6.jpg">
+<h3>Gustovoyage</h3>
+<p>Agence de voyages & de gastronomie</p>
+</div>
+
+<div class="card">
+<img src="assets/image/p4.png">
+<h3>MyDress</h3>
+<p>Boutique de Robe de mariées & de soirées</p>
+</div>
+
+<div class="assets/image/peluchee copie.jpg"></div>
+
+<div class="card">
+<img src="assets/image/p5.png">
+<h3>Star Coaster</h3>
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+
+<div class="contact-container">
+<p>Email : musialelodie@gmail.com</p>
+<p>Github : </p>
+<p>LinkedIn : Elodie Musial</p>
+</div>
+</section>
+
+<footer>
+© 2026 MON UNIVERS
+</footer>
+
+<div id="cursorTrail"></div>
+
+<script>
+
+/* ===== SCROLL FADE ===== */
+
+const cards=document.querySelectorAll(".card");
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("visible");
+}
+});
+},{threshold:.2});
+
+cards.forEach(card=>observer.observe(card));
+
+/* ===== CURSOR SMOOTH ===== */
+
+const cursor=document.getElementById("cursorTrail");
+
+document.addEventListener("mousemove",e=>{
+requestAnimationFrame(()=>{
+cursor.style.left=e.clientX+"px";
+cursor.style.top=e.clientY+"px";
+});
+});
+
+</script>
+
+</body>
+</html>
