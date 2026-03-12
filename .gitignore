@@ -22,10 +22,7 @@ yarn-error.log*
 *.swp
 *.swo
 
-# Images/build
-*.jpg
-*.jpeg
-*.png
-/dist/
-build/
+# Images/build (removed image ignores for portfolio)
+# /dist/
+# build/
 
