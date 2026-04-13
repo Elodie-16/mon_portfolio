@@ -1,17 +1,7 @@
-# TODO - Déploiement mon_portfolio sur GitHub
+# TODO: Enable Vite Build (Complete)
 
-## Étapes complétées :
-- [x] 1. Renommer animation.html → index.html
-- [x] 2. Éditer .gitignore (supprimer ignores images)
-- [x] 3. Éditer README.md (ajouter instructions Pages)
-## Toutes étapes complétées :
-- [x] 1. Renommer animation.html → index.html
-- [x] 2. Éditer .gitignore (supprimer ignores images)
-- [x] 3. Éditer README.md (ajouter instructions Pages)
-- [x] 4. Commit et push (réalisé, inclut pull --rebase)
-- [x] 5. GitHub Pages actif (source /docs ? → push index.html root; rebuild en cours)
-- [x] 6. Test local: `open index.html`; live: https://elodie-16.github.io/mon_portfolio/
+1. [x] Add npm scripts to package.json (dev, build, preview)
+2. [x] Test `npm run build`
+3. [x] Test `npm run preview` (optional)
 
-**Déploiement terminé !** 🎉
-
-Progression : Mise à jour après chaque étape.
+**Scripts added successfully.** Run `npm run build` in a new terminal to generate /dist. Use `npm run dev` for development server, `npm run preview` for build preview. The rollupOptions.input config was already in vite.config.js.
